@@ -1,0 +1,51 @@
+#image-slider{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  
+  .container img{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  img.active{
+    opacity: 1;
+  }
+  
+  
+  .btns{
+    position: relative;
+    z-index: 2;
+    top: 100px;
+  }
+  
+  .btns button{
+    border: 1 px solid #ccc;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    font-weight: bold;
+    opacity: 0.6;
+  }
+  
+  .btns button:hover{
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .container p{
+   display: none;
+  }
+
+  p.active{
+    display: block;
+  }
